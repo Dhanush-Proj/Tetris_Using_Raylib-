@@ -3,6 +3,6 @@
 This is a clone of tetris with zero code similarity with the respect to the orginal Tetris 
 
 Feel free to use 
-just run : makefile in terminal on Linux or Macos . I have no idea will this work on windows
+just run : makefile in terminal on Linux or Macos . I have no idea will this work on windows . I guess it will work because
 
 still in beta version 
