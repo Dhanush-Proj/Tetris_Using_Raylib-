@@ -1,5 +1,6 @@
 #include "game.h"
 #include <random>
+#include <raylib.h>
 
 Game::Game()
 {
@@ -10,7 +11,10 @@ Game::Game()
     GameOver = false;
     score = 0;
     InitAudioDevice();
+    // Wave wave = LoadWave();
+    // WaveFormat(&wave, 44100, 16, 2);
     music = LoadMusicStream("audio/music.mp3");
+    SetMusicVolume(music, 0.5f);
     PlayMusicStream(music);
     rotatesound = LoadSound("audio/rotate.mp3");
     clearsound = LoadSound("audio/clear.mp3");

@@ -31,6 +31,8 @@ Block.o: lib/Block.cpp
 game.o: lib/game.cpp
 	$(CC) $(FLAGS) lib/game.cpp -lcppunit
 
+run:
+	./main
 clean:
 	rm -f $(OBJS) $(OUT)
 
