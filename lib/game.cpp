@@ -2,6 +2,10 @@
 #include <random>
 #include <raylib.h>
 
+
+#define CUSTOM_BUFFER_SIZE 4096
+
+
 Game::Game()
 {
     grid = Grid();
@@ -13,6 +17,7 @@ Game::Game()
     InitAudioDevice();
     // Wave wave = LoadWave();
     // WaveFormat(&wave, 44100, 16, 2);
+    SetAudioStreamBufferSizeDefault(CUSTOM_BUFFER_SIZE);
     music = LoadMusicStream("audio/music.mp3");
     SetMusicVolume(music, 0.5f);
     PlayMusicStream(music);
